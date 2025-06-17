@@ -1,52 +1,378 @@
-<!DOCTYPE html>
-<link rel="icon" 
-      type="image/png" 
-      href="fav.png"></link>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
-<style type="text/css">
-body {
-  margin:0;
-  padding:0;
-  height:100%; 
-  max-height:100%; 
-  background:#eee; 
-  font-family: 'Inter', sans-serif;
-  font-size: 12px;
-  }
-
-iframe {
-  float: left;
-  width: 100%;
-  min-width: 20%;
-  height: 100vh;
-}
-
-</style>
-<script>
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-//go to mobile site
-window.location.replace("mobile.html");
-}
-</script>
-
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
+<!DOCTYPE HTML>
 <html>
 
-    <div>
-        <span style="float:right; width:80%; height:100%">
-            <iframe src="main.html" name="main" id="main" scrolling="yes"> </iframe>
-        </span>
-        <span style="float:left; width:20%; height:100%">
-            <iframe src="nav.html" name="nav" id="nav" scrolling="yes"></iframe>
-        </span>
-                
-      <div id='uw-hcde533'>
-          <script type="text/javascript" src="https://bsubbaraman.github.io/hcde533/onionring/onionring-variables.js"></script>
-          <script type="text/javascript" src="https://bsubbaraman.github.io/hcde533/onionring/onionring-widget.js"></script>
+<head>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <title>Blair Subbaraman</title>
+    <meta property="og:title" content="Blair Subbaramany" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://blairsubbaraman.com" />
+    <meta property="og:image" content="assets/blair.png" />
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link href="style.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"
+        integrity="sha512-F/gIMdDfda6OD2rnzt/Iyp2V9JLHlFQ+EUyixDg9+rkwjqgW1snpkpx7FD5FV1+gG2fmFj7I3r6ReQDUidHelA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<script>
+    function onPageReady() {
+        // Documentation: http://tristen.ca/tablesort/demo/
+        new Tablesort(document.getElementById('archive'), {
+            descending: true
+        });
+    }
+
+    // Run the above function when the page is loaded & ready
+    document.addEventListener('DOMContentLoaded', onPageReady, false);
+</script>
+
+<body>
+    <div class="main-container">
+        <div class="name-title">
+            Blair Subbaraman
         </div>
+
+        <div class="article-hero">
+            <ul class="hero-list">
+                <li class="hero-list-item">
+                    b1air at uw dot edu &middot;
+                    <a href="https://scholar.google.com/citations?user=LzBE_sgAAAAJ&hl=en&oi=ao" target="_blank">Google
+                        Scholar</a>
+                    &middot;
+                    <a href="./assets/cv.pdf" target="_blank">CV</a>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="profile-header">
+            <img class="article-image" src="./assets/blair.jpg" />
+            <p class="profile-text">
+                I’m Blair, a PhD candidate in the department of <a href="https://www.hcde.washington.edu/"
+                    target="_blank">
+                    Human-Centered Design & Engineering</a> at the
+                <a href="https://www.washington.edu" target="_blank"> University of Washington</a>. I work in the
+                <a href="https://depts.washington.edu/machines/" target="_blank">Machine Agency</a> and am
+                advised by <a href="https://www.hcde.washington.edu/peek" target="_blank">Nadya Peek</a>.
+                <!-- <br><br> -->
+                My work explores physical automation as a creative medium. From artists to plant biologists, I build
+                systems with & for domain experts to creatively engage computer-controlled machines, and examine how the
+                use of machines in nontraditional contexts can inform the development of future systems. In this process
+                I am committed to developing open-source hardware and software to enable artistic,
+                scientific, and other creative exploration.
+            </p>
+        </div>
+
+        <p class="job-market">I will be applying to tenure-track faculty positions in Fall 2025.</p>
+
+        <div class="article-text">
+            <div class="header">
+                Selected Publications
+            </div>
+            <p>See all publications <a href="publications.html">here</a>.</p>
+
+            <div class="research-project">
+                <img src="assets/midi.jpg""
+                    alt=" a midi controller connected to a 3D printer">
+                <div class="shadow">
+                    <div class="research-title">
+                        It's Not The Shape, It's The Settings: Tools for Exploring, Documenting, and Sharing Physical
+                        Fabrication Parameters in 3D Printing
+                    </div>
+                    <div class="research-authors"><b>Blair Subbaraman</b>, Nathaneal Bursch, and Nadya Peek</div>
+                    <div class="research-description">
+                        Interactively tuning machine settings using MIDI controllers and auto-documenting the results.
+                    </div>
+                    <div class="research-pub">
+                        ACM Human Factors in Computing Systems (CHI) 2025
+                    </div>
+                    <div class="research-list">
+                        <a href="https://dl.acm.org/doi/full/10.1145/3706598.3713354" target="_blank">Paper</a> &middot;
+                        <a href="https://github.com/machineagency/p5.fab" target="_blank">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="research-project">
+                <img src="assets/loop-dip.png""
+                    alt=" an inoculation loop transferring a duckweed frond">
+                <div class="shadow">
+                    <div class="research-title">
+                        The Duckbot: A System for Automated Imaging and Manipulation of Duckweed
+                    </div>
+                    <div class="research-authors"><b>Blair Subbaraman</b>, Orlando de Lange, Sam Ferguson, and Nadya
+                        Peek</div>
+                    <div class="research-description">
+                        Custom hardware and software to design and automate niche self-driving plant biology
+                        experiments.
+                    </div>
+                    <div class="research-pub">
+                        PLoS ONE 2024
+                    </div>
+                    <div class="research-list">
+                        <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0296717"
+                            target="_blank">Paper</a> &middot;
+                        <a href="https://science-jubilee.readthedocs.io/en/latest/" target="_blank">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="research-project">
+                <img src="assets/spaghetti.jpg"
+                    alt=" a failed 3D print with filament piling up next to a half-completed cat model ">
+                <div class="shadow">
+                    <div class=" research-title">
+                        3D Printers Don’t Fix Themselves: How Maintenance is Part of Digital Fabrication
+                    </div>
+                    <div class="research-authors"><b>Blair Subbaraman</b> and Nadya Peek</div>
+                    <div class="research-description">
+                        Studying how practitioners maintain their FFF 3D printers in the home and aruging that
+                        maintenance is
+                        core to our participants' printing practice.
+                    </div>
+                    <div class="research-pub">
+                        ACM Conference on Designing Interactive Systems (DIS) 2023
+                    </div>
+                    <div class="research-list">
+                        <a href="https://dl.acm.org/doi/abs/10.1145/3563657.3595991" target="_blank">Paper</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="research-project">
+                <img src="assets/forking.png" alt=" a remix graph with three exampled remixed sketches ">
+                <div class="shadow">
+                    <div class=" research-title">
+                        Forking a Sketch: How the OpenProcessing Community Uses Remixing to Collect, Annotate, Tune, and
+                        Extend Creative Code
+                    </div>
+                    <div class="research-authors"><b>Blair Subbaraman</b> and Nadya Peek</div>
+                    <div class="research-description">
+                        A network and qualitative analysis of a large online creative coding community to understand
+                        how artists reuse code.
+                    </div>
+                    <div class="research-pub">
+                        ACM Conference on Designing Interactive Systems (DIS) 2023
+                    </div>
+                    <div class="research-list">
+                        <a href="https://dl.acm.org/doi/abs/10.1145/3563657.3595969" target="_blank">Paper</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="research-project">
+                <img src="assets/test.png" alt=" a 3D printed sculpture ">
+                <div class="shadow">
+                    <div class=" research-title">
+                        p5.fab: Direct Control of Digital Fabrication Machines From a Creative Coding Environment
+                    </div>
+                    <div class="research-authors"><b>Blair Subbaraman</b> and Nadya Peek</div>
+                    <div class="research-description">
+                        A system for controlling digital fabrication machines from the creative coding environment
+                        p5.js, informed by insights into 3D printing practice.
+                    </div>
+                    <div class="research-pub">
+                        ACM Conference on Designing Interactive Systems (DIS) 2022
+                    </div>
+                    <div class="research-list">
+                        <a href="https://dl.acm.org/doi/abs/10.1145/3532106.3533496" target="_blank">Paper</a> &middot;
+                        <a href="https://github.com/machineagency/p5.fab" target="_blank">Code</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="header">Archive</div>
+        <table id="archive">
+            <thead>
+                <tr>
+                    <th>Thing</th>
+                    <th>What</th>
+                    <th>Where</th>
+                    <th data-sort-default>When</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr onclick="window.open('https://ccfest.rocks/', '_blank');">
+                    <td>
+                        3D Printing with p5.fab
+                    </td>
+                    <td>Workshop</td>
+                    <td>Creative Coding Fest</td>
+                    <td>2025</td>
+                </tr>
+                <tr onclick="window.open('https://dl.acm.org/doi/full/10.1145/3706598.3713354', '_blank');">
+                    <td>
+                        It's Not the Shape, It's the Settings
+                    </td>
+                    <td>Research Publication</td>
+                    <td>ACM CHI</td>
+                    <td>2025</td>
+                </tr>
+                <tr
+                    onclick="window.open('https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0296717', '_blank');">
+                    <td>The Duckbot</td>
+                    <td>Research Publication</td>
+                    <td>PLoS ONE</td>
+                    <td>2024</td>
+                </tr>
+                <tr onclick="window.open('https://dl.acm.org/doi/abs/10.1145/3563657.3595991', '_blank');">
+                    <td>3D Printers Don’t Fix Themselves</td>
+                    <td>Research Publication</td>
+                    <td>ACM DIS</td>
+                    <td>2023</td>
+                </tr>
+                <tr onclick="window.open('https://dl.acm.org/doi/abs/10.1145/3563657.3595969', '_blank');">
+                    <td>Forking a Sketch</td>
+                    <td>Research Publication</td>
+                    <td>ACM DIS</td>
+                    <td>2023</td>
+                </tr>
+                <tr onclick="window.open('https://dl.acm.org/doi/full/10.1145/3706598.3713354', '_blank');">
+                    <td>p5.fab</td>
+                    <td>Research Publication</td>
+                    <td>ACM DIS</td>
+                    <td>2022</td>
+                </tr>
+                <tr onclick="window.open('https://machineagency.github.io/p5.fab-docs/', '_blank');">
+                    <td><code>p5.fab</code></td>
+                    <td>Open-Source Software</td>
+                    <td>GitHub</td>
+                    <td>ongoing</td>
+                </tr>
+                <tr onclick="window.open('https://science-jubilee.readthedocs.io/en/latest/', '_blank');">
+                    <td><code>science-jubilee</code></td>
+                    <td>Open-Source Software + Hardware</td>
+                    <td>GitHub</td>
+                    <td>ongoing</td>
+                </tr>
+                <tr onclick="window.open('https://depts.washington.edu/machines/scienceautomation/', '_blank');">
+                    <td>Pathways to Open-Source Hardware for Laboratory Automation</td>
+                    <td>Workshop</td>
+                    <td>Seattle, WA</td>
+                    <td>2024, 2025</td>
+                </tr>
+                <tr onclick="window.open('https://dl.acm.org/doi/10.1145/3505276', '_blank');">
+                    <td>Narrative Biosensing</td>
+                    <td>Research Project</td>
+                    <td>Seattle, WA</td>
+                    <td>2022</td>
+                </tr>
+                <tr onclick="window.open('https://github.com/OpenPTrack/open_ptrack_v2', '_blank');">
+                    <td>OpenPTrack</td>
+                    <td>Open-Source Software</td>
+                    <td>Github</td>
+                    <td>2018-2020</td>
+                </tr>
+                <tr onclick="window.open('https://doi.org/10.1007/978-3-031-05434-1_10', '_blank');">
+                    <td>@LAs</td>
+                    <td>Installation</td>
+                    <td>Los Angeles, CA</td>
+                    <td>2019</td>
+                </tr>
+                <tr
+                    onclick="window.open('https://www.citylab.ucla.edu/projects/project-one-f5w4d-pdw4g?rq=buzz', '_blank');">
+                    <td>The Buzz</td>
+                    <td>Installation</td>
+                    <td>Los Angeles, CA</td>
+                    <td>2018</td>
+                </tr>
+                <tr onclick="window.open('https://remap.ucla.edu/entropy-bound/', '_blank');">
+                    <td>Entropy Bound</td>
+                    <td>Immersive Theater Performance</td>
+                    <td>Los Angeles, CA</td>
+                    <td>2018</td>
+                </tr>
+                <tr onclick="window.open('https://vimeo.com/315600478', '_blank');">
+                    <td>Future Storytelling</td>
+                    <td>Immersive Theater Performance</td>
+                    <td>Los Angeles, CA</td>
+                    <td>2018</td>
+                </tr>
+                <tr onclick="window.open('assets/ug-thesis.pdf', '_blank');">
+                    <td>Biological Hydrodynamics</td>
+                    <td>Undergraduate Thesis</td>
+                    <td>Claremont, CA</td>
+                    <td>2018</td>
+                </tr>
+                <tr
+                    onclick="window.open('https://www.univision.com/local/los-angeles-kmex/la-robotica-no-es-solo-para-hombres-estas-24-jovenes-hispanas-asi-lo-demuestran', '_blank');">
+                    <td>Community Science</td>
+                    <td>Community Partnership</td>
+                    <td>Claremont, CA</td>
+                    <td>2016-2018</td>
+                </tr>
+                <tr
+                    onclick="window.open('https://hackaday.com/2025/04/28/supercon-2024-sketching-with-machines/', '_blank');">
+                    <td>Sketching with Machines</td>
+                    <td>Talk</td>
+                    <td>Hackaday Supercon</td>
+                    <td>2024</td>
+                </tr>
+                <tr
+                    onclick="window.open('https://github.com/The-Frederickson-Lab/duckweed-workshop-two?tab=readme-ov-file#software-and-hardware-for-automated-high-throughput-experiments-with-duckweeds-and-other-small-organisms', '_blank');">
+                    <td>Demonstrating Science Jubilee: Open-source Hardware for Laboratory Automation</td>
+                    <td>Talk</td>
+                    <td>Duckweeds, Microbes, and Symbiosis</td>
+                    <td>2024</td>
+                </tr>
+                <tr onclick="window.open('https://opensourceart.cc/', '_blank');">
+                    <td>Bridging Creative Code and Digital Fabrication</td>
+                    <td>Talk</td>
+                    <td>Open Source Arts Contributors Conference</td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <td>Computational Fabrication in Performance Contexts</td>
+                    <td>Talk</td>
+                    <td>UCLA School of Theater, Film, and Television</td>
+                    <td>2023</td>
+                </tr>
+                <tr
+                    onclick="window.open('https://biosummit.live/talks-panels-breakouts/automation-data-and-medical-innovation?rq=blair', '_blank');">
+                    <td>Custom Workflow Automation with Jubilee</td>
+                    <td>Talk</td>
+                    <td>Global Community Biosummit 6.0</td>
+                    <td>2023</td>
+                </tr>
+                <tr
+                    onclick="window.open('https://github.com/The-Frederickson-Lab/duckweed-workshop?tab=readme-ov-file#second-session', '_blank');">
+                    <td>Niche Experiments with Jubilee: Duckweed Growth Assays as a Case Study</td>
+                    <td>Talk</td>
+                    <td>Duckweeds and Microbes: A New Frontier in Symbiosis Research</td>
+                    <td>2022</td>
+                </tr>
+                <tr onclick="window.open('https://4sonline.org/', '_blank');">
+                    <td>BodyTeller: Explorations in Narrative Biosensing</td>
+                    <td>Talk</td>
+                    <td>Society for Social Studies of Science (4S)</td>
+                    <td>2021</td>
+                </tr>
+                <tr onclick="window.open('https://vimeo.com/493094038', '_blank');">
+                    <td>The Invention of Morel</td>
+                    <td>Immersive Theater Performance</td>
+                    <td>Los Angeles, CA</td>
+                    <td>2020</td>
+                </tr>
+                <tr onclick="window.open('https://vimeo.com/579847631', '_blank');">
+                    <td>A Most Favored Nation</td>
+                    <td>Immersive Theater Performance</td>
+                    <td>Los Angeles, CA</td>
+                    <td>2019</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
     </div>
 
+</body>
 
 </html>
