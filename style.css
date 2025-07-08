@@ -237,14 +237,6 @@ v .blurb-list {
     line-height: 1em;
 }
 
-.article-image {
-    max-width: 282px;
-    max-height: 500px;
-    border: black;
-    border-style: solid;
-    border-width: 1px;
-}
-
 .profile-image {
     max-width: 300px;
     max-height: 300px;
@@ -254,8 +246,8 @@ v .blurb-list {
 }
 
 .article-image {
-    max-width: 220px;
-    max-height: 220px;
+    max-width: 250px;
+    max-height: 250px;
     border: black;
     border-style: solid;
     border-width: 1px;
@@ -267,8 +259,9 @@ v .blurb-list {
 
 .profile-text {
     margin-left: 20px;
-    margin-top: 1.2em;
+    margin-top: 0.8em;
     line-height: 1.5em;
+    font-size: 0.9em;
 }
 
 .job-market {
