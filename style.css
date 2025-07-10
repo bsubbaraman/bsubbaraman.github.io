@@ -229,6 +229,7 @@ v .blurb-list {
 }
 
 .hero-list-item {
+    margin: 0;
     margin-bottom: 0.75em
 }
 
