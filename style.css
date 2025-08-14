@@ -276,6 +276,21 @@ v .blurb-list {
     line-height: 1.5em;
 }
 
+.best-paper {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 0.5em;
+    font-size: 0.85em;
+    border-radius: .25em;
+    padding: 3px;
+    border: 1px solid black;
+}
+
+.best-paper img {
+    vertical-align: middle;
+    margin: 0;
+}
+
 .research-project {
     display: flex;
     margin-top: 1em;
@@ -336,6 +351,9 @@ thead tr {
 
 .research-project img {
     max-width: 220px;
+    aspect-ratio: 2;
+    /* object-fit: cover; */
+    /* max-height: 130px; */
     /* border: 1px solid black; */
 }
 
