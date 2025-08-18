@@ -295,6 +295,7 @@ v .blurb-list {
     display: flex;
     margin-top: 1em;
     margin-bottom: 2em;
+    align-items: center;
     /* border: 1px solid black;
     box-shadow: 7px 7px #aeb3f7; */
 }
@@ -304,6 +305,7 @@ v .blurb-list {
     box-shadow: 7px 7px #aebaf7;
     /* box-shadow: 7px 7px #a4bafd; */
     margin-left: 20px;
+    padding-right: 10px;
 }
 
 table {
@@ -351,7 +353,8 @@ thead tr {
 
 .research-project img {
     max-width: 220px;
-    aspect-ratio: 2;
+    max-height: 124px;
+    /* aspect-ratio: 16/9; */
     /* object-fit: cover; */
     /* max-height: 130px; */
     /* border: 1px solid black; */
